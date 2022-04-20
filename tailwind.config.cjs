@@ -116,7 +116,7 @@ module.exports = {
             "h1, h2, h3, h4, h5": {
               color: "var(--important) !important",
             },
-            "p, ul, ol, div": {
+            "p, ul, ol, div, strong": {
               color: "var(--body)",
             },
             blockquote: {
