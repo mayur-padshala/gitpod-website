@@ -139,7 +139,7 @@
 </style>
 
 <details
-  class="faq group bg-sand-dark border border-solid border-transparent focus:border-white hover:border-white rounded-2xl"
+  class="faq group bg-sand-dark dark:bg-card border border-solid border-transparent focus:border-white dark:hover:border-black dark:focus:border-black hover:border-white rounded-2xl"
   open={isActive}
   on:toggle={setActive}
   id={fragment}
