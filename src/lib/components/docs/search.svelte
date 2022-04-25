@@ -118,7 +118,7 @@
         type="search"
         {placeholder}
         id={docSearchInputSelector}
-        class="box-border rounded-2xl bg-card shadow-normal block w-full text-p-medium h-small pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder:text-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-black {clazz}"
+        class="box-border rounded-2xl bg-card shadow-normal block w-full text-p-medium h-small pl-11 pr-3 py-2 border border-transparent leading-5 text-important placeholder:text-body focus:outline-none focus:bg-none focus:border-transparent focus:ring-transparent focus:text-important {clazz}"
       />
     </div>
   </div>

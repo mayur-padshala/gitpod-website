@@ -130,6 +130,10 @@ module.exports = {
                 background: "var(--brand-almost-ripe)",
               },
               p: {
+                color: "var(--dark-grey)",
+                strong: {
+                  color: "var(--dark-grey)",
+                },
                 margin: "0",
                 "&::after": {
                   content: "none !important",

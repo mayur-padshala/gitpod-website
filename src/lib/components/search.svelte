@@ -27,6 +27,6 @@
     placeholder="Search"
     bind:value
     id="search"
-    class="box-border block w-full text-p-medium h-small pl-4 pr-3 py-2 border border-transparent bg-transparent leading-5 text-important placeholder-text-body focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-important"
+    class="box-border block w-full text-p-medium h-small pl-4 pr-3 py-2 border border-transparent bg-transparent leading-5 text-important placeholder-text-body focus:outline-none focus:bg-none focus:border-transparent focus:ring-transparent focus:text-important"
   />
 </div>

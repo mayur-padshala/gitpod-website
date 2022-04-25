@@ -15,7 +15,7 @@
   <a
     {href}
     target="_blank"
-    class="inline-flex py-macro px-4 items-center  justify-center bg-card rounded-2xl text-btn-small text-important shadow-light font-semibold hover:bg-white focus:bg-white"
+    class="inline-flex py-macro px-4 items-center justify-center bg-bg rounded-2xl text-btn-small text-important shadow-light font-semibold hover:bg-card focus:bg-card"
     rel="noopener"
     data-analytics={`{"variant":"open_in_gitpod"}`}
   >

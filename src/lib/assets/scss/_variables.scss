@@ -31,13 +31,6 @@
 
   --brand-gradient: linear-gradient(137.41deg, #ffad33 14.37%, #ff8a00 91.32%);
 
-  --shadow: 0 0.625rem 1.5rem 0rem rgba(0, 0, 0, 0.08);
-  --shadow-medium: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
-  --shadow-light: 0 1px 1px rgba(0, 0, 0, 0.1);
-  --shadow-brand: 0 0.625rem 1.5rem var(--brand-quaternary);
-  --shadow-light-1: 0px 3.58399px 8.95998px rgba(0, 0, 0, 0.08),
-    0px 8.95998px 35.8399px rgba(0, 0, 0, 0.12);
-
   --h1: 5rem;
   --h2: 3.375rem;
   --h3: 3rem;
@@ -97,6 +90,13 @@ body.light {
   --divider: var(--divider-light);
 
   --less-important: var(--black-hover);
+
+  --shadow-light: 0 1px 1px rgba(0, 0, 0, 0.1);
+  --shadow: 0 0.625rem 1.5rem 0rem rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.1);
+  --shadow-brand: 0 0.625rem 1.5rem var(--brand-quaternary);
+  --shadow-light-1: 0px 3.58399px 8.95998px rgba(0, 0, 0, 0.08),
+    0px 8.95998px 35.8399px rgba(0, 0, 0, 0.12);
 }
 
 body.dark {
@@ -109,4 +109,12 @@ body.dark {
   --nav: var(--bg);
 
   --divider: var(--light-black);
+
+  --shadow-light: 0px 10px 24px #000000;
+  --shadow: 0 0.625rem 1.5rem 0rem #000000;
+  --shadow-medium: 0 1.25rem 2.5rem #000000;
+  --shadow-brand: 0 0.625rem 1.5rem #ffca64b2;
+
+  --shadow-light-1: 0px 3.58399px 8.95998px #000000,
+    0px 8.95998px 35.8399px rgba(0, 0, 0, 0.12);
 }
