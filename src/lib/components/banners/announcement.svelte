@@ -17,7 +17,6 @@
 </script>
 
 <div
-  class="border-b border-divider border-solid"
   class:hidden={!bannerData.display}
   data-analytics={`{"position":"announcement"}`}
 >
@@ -25,7 +24,7 @@
     storageKey="announcement-{`${bannerData.startDate}${bannerData.endDate}`}"
     display={bannerData.display}
     let:closeBanner
-    class="announcement-banner"
+    class="announcement-banner border-b border-divider border-solid"
   >
     <span class="flex-1 text-lg text-right">📣 </span>
     <p class="flex-2 px-4 md:px-2">
@@ -46,7 +45,7 @@
         >
           <path
             d="M1.00107 1L11 11M10.9989 1L1 11"
-            stroke="#12100C"
+            stroke="var(--important)"
             stroke-opacity="0.75"
             stroke-linecap="round"
           />
