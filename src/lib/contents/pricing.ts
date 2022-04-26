@@ -9,6 +9,8 @@ import type {
   FeatureTableToc,
 } from "../components/ui-library/feature-table/feature-table.types";
 import type { FAQ } from "../types/faq.type";
+// @ts-ignore
+import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 
 export const pricingPlans: Pricing[] = [
   {
@@ -483,10 +485,7 @@ export const pricingTableToc: FeatureTableToc[] = [
     type: "image",
     data: {
       text: "GitHub",
-      image: {
-        path: "/svg/github.svg",
-        alt: "GitHub",
-      },
+      image: githubMarkSvelte,
     },
   },
   {
@@ -522,7 +521,7 @@ export const pricingFAQ: FAQ = {
     {
       title:
         "Do you offer discounts for students and educational institutions?",
-      content: `<p> Yes, qualified educational institutions may receive a special discount. Pleaseß <a href="/contact/sales">Contact us</a>. If you are a student, you may use the Student Unlimited Plan for ${
+      content: `<p> Yes, qualified educational institutions may receive a special discount. Please <a href="/contact/sales">Contact us</a>. If you are a student, you may use the Student Unlimited Plan for ${
         isEurope() ? "€8" : "$9"
       } per month (usually ${
         isEurope() ? "€35" : "$39"

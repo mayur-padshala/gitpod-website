@@ -111,10 +111,10 @@ body.dark {
   --divider: var(--light-black);
 
   --shadow-light: 0px 10px 24px #000000;
-  --shadow: 0 0.625rem 1.5rem 0rem #000000;
-  --shadow-medium: 0 1.25rem 2.5rem #000000;
+  --shadow: 0 0.625rem 1.5rem 0rem rgba(0, 0, 0, 0.5);
+  --shadow-medium: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.5);
   --shadow-brand: 0 0.625rem 1.5rem #ffca64b2;
 
-  --shadow-light-1: 0px 3.58399px 8.95998px #000000,
+  --shadow-light-1: 0px 3.58399px 8.95998px rgba(0, 0, 0, 0.5),
     0px 8.95998px 35.8399px rgba(0, 0, 0, 0.12);
 }

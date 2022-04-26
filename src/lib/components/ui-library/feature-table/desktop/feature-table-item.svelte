@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Cross from "$lib/components/svgs/cross.svelte";
   import type { FeatureItemDetail } from "../feature-table.types";
   export let definition: FeatureItemDetail;
 </script>
@@ -32,7 +33,7 @@
     {/if}
 
     {#if definition.availability === false}
-      <img alt="No" class="mx-auto" height="24" width="24" src="/cross.svg" />
+      <Cross />
     {/if}
   </div>
 {/if}

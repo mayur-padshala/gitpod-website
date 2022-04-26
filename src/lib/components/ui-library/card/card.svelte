@@ -21,6 +21,10 @@
     @apply bg-white;
   }
 
+  :global(body.dark) .white {
+    @apply bg-bg;
+  }
+
   .card {
     @apply bg-card;
   }
