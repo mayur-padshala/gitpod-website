@@ -3,15 +3,14 @@ import { terminalSource, linuxSource } from "../terminal";
 // @ts-ignore
 import Workspaces from "$lib/components/workspaces.svelte";
 import type { Card } from "$lib/types/card.type";
+//@ts-ignore
+import mutiTrackDevelopmentSvelte from "$lib/components/svgs/startups/muti-track-development.svelte";
 
 export const multiTrackDevelopmentFeature: Feature = {
   title: "Multi track development with ease",
   paragraph:
     "You can have multiple workspaces with different contexts open at once - one for your feature, one for a bug or one for your code review directly in Gitpod.",
-  image: {
-    src: "/svg/features/muti-track-development.svg",
-    alt: "Multi track development with ease",
-  },
+  previewComponent: mutiTrackDevelopmentSvelte,
 };
 
 export const collaborationFeature: Feature = {

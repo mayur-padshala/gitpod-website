@@ -40,11 +40,13 @@
         style="transform: {transform}"
       />
     {:else}
-      <svelte:component
-        this={icon}
-        class="{iconClassNames} mb-xx-small mx-auto"
-        style="transform: {transform}"
-      />
+      <div class="{iconClassNames} mb-xx-small" style="width: auto;">
+        <svelte:component
+          this={icon}
+          class="mx-auto"
+          style="transform: {transform}"
+        />
+      </div>
     {/if}
     {#if headingLevel === "h3"}
       <h3 class="mb-micro {titleClassNames}">{title}</h3>
