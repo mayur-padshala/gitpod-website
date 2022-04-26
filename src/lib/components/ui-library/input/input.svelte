@@ -32,7 +32,7 @@
     on:change
     bind:value
     bind:this={element}
-    class="bg-card text-[#000000] box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider {className}"
+    class="bg-card text-important box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider {className}"
     type="text"
     {...$$restProps}
   />
@@ -43,7 +43,7 @@
     on:change
     bind:value
     bind:this={element}
-    class="bg-card text-[#000000] box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider placeholder:text-body {className}"
+    class="bg-card text-important box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider placeholder:text-body {className}"
     type="email"
     {...$$restProps}
   />{/if}
