@@ -8,7 +8,7 @@ import salesSvelte from "$lib/components/svgs/sales.svelte";
 export const contactActions: ContactAction[] = [
   {
     icon: quickstartSvelte,
-    transform: "scale(1.1)",
+    transform: "scale(1.05)",
     title: "Support",
     text: "Get help with any question or issue.",
     link: {
@@ -28,7 +28,7 @@ export const contactActions: ContactAction[] = [
   },
   {
     icon: communitySvelte,
-    transform: "translateY(-1rem)",
+    transform: "translateY(-1rem) scale(.95)",
     title: "Community",
     text: "Connect with the community to get help for common requests.",
     link: {
