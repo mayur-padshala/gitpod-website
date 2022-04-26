@@ -10,6 +10,8 @@ import {
   multiTrackDevelopmentFeature,
 } from "./home/features";
 import type { FAQ } from "$lib/types/faq.type";
+// @ts-ignore
+import salesSvelte from "$lib/components/svgs/sales.svelte";
 
 export const quotes: Quote[] = [
   {
@@ -93,8 +95,8 @@ export const programBenefits: Card[] = [
     icon: {
       src: "/svg/media-kit/logo-mark.svg",
       alt: "Gitpod",
-      transform: "scale(.95)",
     },
+    transform: "scale(.95)",
     title: "Gitpod for free",
     text: "Maintainers get unlimited hours for usage on public repos. Contributors to your project are provided with a generous free plan for up to 50h a month, including private repos. For projects that run their own infrastructure complimentary <a href='/self-hosted'>Gitpod Self-Hosted</a> licenses are also available.",
   },
@@ -102,17 +104,14 @@ export const programBenefits: Card[] = [
     icon: {
       src: "/svg/heart.svg",
       alt: "Special treats",
-      transform: "scale(0.8)",
     },
+    transform: "scale(0.8)",
     title: "Special treats",
     text: "If your open-source software appears in our bill of materials then Gitpod would like to unconditionally <a href='https://github.com/moby/buildkit/issues/2525'>shout you some beers</a> <a href='/blog/devxconf-wrap'>or more</a> as our way of saying thank-you.",
   },
   {
-    icon: {
-      src: "/svg/contact/sales.svg",
-      alt: "Personal onboarding",
-      transform: "scale(1.6) translateY(3px)",
-    },
+    icon: salesSvelte,
+    transform: "scale(1.6) translateY(3px)",
     title: "Personal onboarding",
     text: "We are here to help you with getting started and can provide ongoing support for maintaining the <a href='/docs/references/gitpod-yml'>.gitpod.yml</a> if you want.",
   },
@@ -175,8 +174,8 @@ export const cards: Card[] = [
     icon: {
       src: "/svg/opensource/open-vscode.svg",
       alt: "OpenVS Code",
-      transform: "scale(1.5)",
     },
+    transform: "scale(1.5)",
     title: "OpenVS Code",
     text: "A version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
     link: {
