@@ -11,7 +11,7 @@
 
 <style lang="postcss">
   label {
-    @apply mb-0 cursor-pointer text-h6 font-bold py-macro px-xx-small rounded-5xl transition-all duration-300 hover:text-important;
+    @apply mb-0 cursor-pointer text-h6 font-bold py-macro px-xx-small rounded-5xl transition-all duration-300 hover:text-important focus:text-important;
   }
 
   .switch-container {
@@ -66,6 +66,31 @@
 
       &:last-of-type {
         @apply bg-primary text-black;
+      }
+    }
+
+    &.inversed {
+      label:first-of-type {
+        @apply bg-transparent text-body;
+
+        &:hover,
+        &:focus {
+          @apply text-important;
+        }
+      }
+
+      label:last-of-type {
+        @apply bg-primary text-black;
+      }
+
+      &.checked {
+        label:first-of-type {
+          @apply bg-primary text-black;
+        }
+
+        label:last-of-type {
+          @apply bg-transparent text-body;
+        }
       }
     }
   }
