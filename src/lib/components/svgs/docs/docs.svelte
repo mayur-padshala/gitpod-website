@@ -4,6 +4,7 @@
   viewBox="0 0 134 144"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
+  {...$$props}
 >
   <g filter="url(#filter0_dd_3283_1492)">
     <path

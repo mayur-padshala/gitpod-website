@@ -5,6 +5,7 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   transform="scale(1.5)"
+  {...$$props}
 >
   <g filter="url(#filter0_dd_3283_1523)">
     <g clip-path="url(#clip0_3283_1523)">
