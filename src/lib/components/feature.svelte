@@ -50,6 +50,11 @@
   .buttons-wrapper {
     @apply flex justify-center items-center flex-wrap space-x-4;
   }
+
+  .component-container > :global(*) {
+    height: 100%;
+    width: 100%;
+  }
 </style>
 
 <Section class="feature-container-section">
@@ -137,9 +142,11 @@
       {#if footnote}
         <p class="fine-print mt-x-small max-w-md mx-auto">{@html footnote}</p>
       {/if}
-      {#if previewComponent}
-        <svelte:component this={previewComponent} />
-      {/if}
+      <div class="component-container">
+        {#if previewComponent}
+          <svelte:component this={previewComponent} />
+        {/if}
+      </div>
     </div>
   </div>
 </Section>

@@ -1,4 +1,10 @@
-<svg width="700" height="410" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="700"
+  height="410"
+  viewBox="0 0 700 400"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <g opacity=".35" filter="url(#abc)">
     <g clip-path="url(#bcd)">
       <rect

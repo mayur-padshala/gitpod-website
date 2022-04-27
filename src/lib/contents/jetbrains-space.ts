@@ -9,6 +9,10 @@ import type {
 import opensourceSvelte from "$lib/components/svgs/opensource.svelte";
 // @ts-ignore
 import multiTrackDevelopmentSvelte from "$lib/components/svgs/startups/multi-track-development.svelte";
+// @ts-ignore
+import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
+// @ts-ignore
+import awsSvelte from "$lib/components/svgs/aws.svelte";
 
 export const openSourceFeature = {
   title: "Open-source",
@@ -214,10 +218,7 @@ export const JetbraisSpaceToc: FeatureTableToc[] = [
     type: "image",
     data: {
       text: "GitHub Integration",
-      image: {
-        alt: "GitHub",
-        path: "/svg/github.svg",
-      },
+      image: githubMarkSvelte,
     },
   },
   {
@@ -254,10 +255,7 @@ export const JetbraisSpaceToc: FeatureTableToc[] = [
     type: "image",
     data: {
       text: "Self-Host on AWS",
-      image: {
-        alt: "AWS",
-        path: "/svg/brands/aws.svg",
-      },
+      image: awsSvelte,
     },
   },
   {
