@@ -1,4 +1,11 @@
-<svg width="30" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="30"
+  height="31"
+  viewBox="0 0 30 31"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  {...$$props}
+>
   <path
     d="M0 15.238c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.285-6.716-15-15-15-8.284 0-15 6.715-15 15Z"
     fill="url(#a)"
