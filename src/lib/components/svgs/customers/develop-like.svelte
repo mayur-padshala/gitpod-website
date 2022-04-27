@@ -7,7 +7,6 @@
         width="131"
         height="131"
         rx="29.163"
-        fill="#F9F9F9"
         class="fill-card dark:fill-bg"
       />
       <path
@@ -27,7 +26,6 @@
       width="84.53"
       height="84.53"
       rx="18.818"
-      fill="#F9F9F9"
       class="fill-card dark:fill-bg"
     />
     <path
@@ -44,7 +42,6 @@
       width="213.551"
       height="213.551"
       rx="47.541"
-      fill="#F9F9F9"
       class="fill-card dark:fill-bg"
     />
     <g clip-path="url(#e)">
@@ -78,7 +75,6 @@
       width="119.888"
       height="119.888"
       rx="26.69"
-      fill="#F9F9F9"
       class="fill-card dark:fill-bg"
     />
     <g clip-path="url(#g)">

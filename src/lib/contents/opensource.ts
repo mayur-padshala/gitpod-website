@@ -12,16 +12,21 @@ import {
 import type { FAQ } from "$lib/types/faq.type";
 // @ts-ignore
 import salesSvelte from "$lib/components/svgs/sales.svelte";
+// @ts-ignore
+import redwoodjsSvelte from "$lib/components/svgs/customers/redwoodjs.svelte";
+// @ts-ignore
+import prismaSvelte from "$lib/components/svgs/opensource/prisma.svelte";
+// @ts-ignore
+import prometheusSvelte from "$lib/components/svgs/opensource/prometheus.svelte";
+// @ts-ignore
+import theiaSvelte from "$lib/components/svgs/opensource/theia.svelte";
 
 export const quotes: Quote[] = [
   {
     text: "Gitpod totally changed the development velocity for RedwoodJS—it removed any issues related to configurations of dev environments and made it incredibly easy to contribute. Reviewing pull requests is delightful because they are prebuilt and ready for review!",
     author: "Tom Preston-Werner",
     jobTitle: "Co-founder of GitHub",
-    companyLogo: {
-      src: "/svg/opensource/redwood.svg",
-      alt: "RedwoodJS",
-    },
+    companyLogo: redwoodjsSvelte,
     link: { href: "/customers/redwoodjs", text: "View Customer Story" },
     img: {
       src: "/images/opensource/mojombo.jpg",
@@ -33,10 +38,7 @@ export const quotes: Quote[] = [
     text: "I'm using Gitpod almost daily when trying out new technologies, working on OSS PRs/repros or when giving demos. Welcome to the promised land of cloud development environments.",
     author: "Johannes Schickling",
     jobTitle: "Co-founder of Prisma",
-    companyLogo: {
-      src: "/svg/opensource/prisma.svg",
-      alt: "Prisma",
-    },
+    companyLogo: prismaSvelte,
     img: {
       src: "/images/opensource/schickling.jpg",
       square: true,
@@ -47,10 +49,7 @@ export const quotes: Quote[] = [
     text: `With Gitpod, I can review at any pull request in a full coding environment where I can edit, build, and test the contribution, by just prepending "http://gitpod.io#". Gitpod makes the pull-request review process so much nicer for me and I no longer have to do any local checkouts.`,
     author: "Julius Volz",
     jobTitle: "Co-founder of Prometheus",
-    companyLogo: {
-      src: "/svg/opensource/prometheus.svg",
-      alt: "Prometheus",
-    },
+    companyLogo: prometheusSvelte,
     img: {
       src: "/images/opensource/juliusv.jpg",
       square: true,
@@ -159,10 +158,7 @@ export const cards: Card[] = [
     },
   },
   {
-    icon: {
-      src: "/svg/opensource/theia.svg",
-      alt: "Theia",
-    },
+    icon: theiaSvelte,
     title: "Theia",
     text: "An extensible framework to develop full-fledged multi-language Cloud & Desktop IDEs.",
     link: {

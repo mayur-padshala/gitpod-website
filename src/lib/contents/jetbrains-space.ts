@@ -5,6 +5,10 @@ import type {
   FeatureTableColumn,
   FeatureTableToc,
 } from "$lib/components/ui-library/feature-table/feature-table.types";
+// @ts-ignore
+import opensourceSvelte from "$lib/components/svgs/opensource.svelte";
+// @ts-ignore
+import multiTrackDevelopmentSvelte from "$lib/components/svgs/startups/multi-track-development.svelte";
 
 export const openSourceFeature = {
   title: "Open-source",
@@ -15,10 +19,7 @@ export const openSourceFeature = {
     "Contribute to Gitpod and build your own customizations",
     "Works just as smoothly with GitHub, GitLab and Bitbucket",
   ],
-  image: {
-    src: "/images/github-codespaces/spaces-3.svg",
-    alt: "Gitpod integrations",
-  },
+  previewComponent: opensourceSvelte,
 };
 
 export const features: Feature[] = [
@@ -36,10 +37,7 @@ export const features: Feature[] = [
     title: "Ephemeral workspaces",
     paragraph:
       "Spin up preconfigured, standardized dev environments from any git context when you need them and close them when you're done. Once you’ve experienced the freedom, you won’t go back to the friction of long-living stateful environments as JetBrains Spaces offers it.",
-    image: {
-      src: "/svg/features/muti-track-development.svg",
-      alt: "Ephemeral Workspaces",
-    },
+    previewComponent: multiTrackDevelopmentSvelte,
   },
   {
     title: "Greater cost-efficiency",

@@ -39,8 +39,11 @@
         class="{iconClassNames} mb-xx-small mx-auto"
         style="transform: {transform}"
       />
-    {:else}
-      <div class="{iconClassNames} mb-xx-small" style="width: auto;">
+    {:else if icon}
+      <div
+        class="{iconClassNames} mb-xx-small flex justify-center"
+        style="width: auto;"
+      >
         <svelte:component
           this={icon}
           class="mx-auto"
