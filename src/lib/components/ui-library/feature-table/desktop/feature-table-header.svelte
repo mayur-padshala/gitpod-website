@@ -17,7 +17,7 @@
       <svelte:component this={headerData.image} class="h-10" />
     {/if}
     <div class="text-center">
-      <h3>{headerData.headline}</h3>
+      <h3>{@html headerData.headline}</h3>
       {#if headerData.subtitle}
         <p>{headerData.subtitle}</p>
       {/if}
