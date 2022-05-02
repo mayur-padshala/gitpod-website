@@ -39,7 +39,8 @@
     delay-[50ms] 
     inline-block 
     text-center 
-    shadow-light 
+    shadow-light
+    dark:shadow-none
     font-semibold 
     whitespace-nowrap
     bg-none
