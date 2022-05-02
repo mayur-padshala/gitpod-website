@@ -51,9 +51,8 @@
 
 <Card
   size="small"
-  class={`box flex w-full max-w-xs sm:w-[320px] gap-small py-small flex-col justify-between items-center bg-card px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small  text-center transition-all duration-200 hover:shadow-brand ${
-    spiced ? "spiced shadow-brand" : ""
-  }`}
+  class={`box flex w-full max-w-xs sm:w-[320px] gap-small py-small flex-col justify-between items-center bg-card px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small  text-center transition-all duration-200 hover:shadow-brand`}
+  brandShadow={spiced}
 >
   <div class="flex flex-col">
     <h2 class="h4">{title}</h2>
@@ -68,7 +67,7 @@
       {/if}
     </div>
     {#if features}
-      <ul
+      <ulˀ
         class="inline-flex flex-col ml-x-small mt-xx-small space-y-micro text-left"
       >
         {#each features as feature}
@@ -80,7 +79,7 @@
             {/if}
           </li>
         {/each}
-      </ul>
+      </ulˀ>
     {/if}
     {#if learnMoreHref}
       <div class="flex flex-1 justify-center items-center">

@@ -35,9 +35,9 @@
 </style>
 
 <div
-  class:brand={brandShadow}
   style={styles}
-  class="shadow-normal {background} {size} {className}"
+  class="shadow-normal dark:shadow-none {background} {size} {className}"
+  class:brand={brandShadow}
 >
   <slot />
 </div>
