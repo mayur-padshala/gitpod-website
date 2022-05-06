@@ -36,6 +36,7 @@ module.exports = {
         sub: "var(--sub)",
         "link-grey": "var(--link-grey)",
         divider: "var(--divider)",
+        "divider-light": "var(--divider-light)",
         bg: "var(--bg)",
         card: "var(--card)",
         nav: "var(--nav)",
