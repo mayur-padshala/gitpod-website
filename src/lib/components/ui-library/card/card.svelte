@@ -15,7 +15,7 @@
     @apply rounded-2xl;
   }
   .medium {
-    @apply rounded-2xl md:rounded-5xl;
+    @apply shadow-normal rounded-2xl md:rounded-5xl;
   }
 
   .white {
