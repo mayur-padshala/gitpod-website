@@ -102,6 +102,7 @@ module.exports = {
         normal: "var(--shadow)",
         light: "var(--shadow-light)",
         light1: "var(--shadow-light-1)",
+        slight: "var(--shadow-slight)",
         medium: "var(--shadow-medium)",
         brand: "var(--shadow-brand)",
       },

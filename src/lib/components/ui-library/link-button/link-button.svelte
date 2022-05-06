@@ -40,7 +40,7 @@
     inline-block 
     text-center 
     shadow-light
-    dark:shadow-none
+    {variant !== 'gray' ? 'dark:shadow-none' : 'dark:shadow-slight'}
     font-semibold 
     whitespace-nowrap
     bg-none
