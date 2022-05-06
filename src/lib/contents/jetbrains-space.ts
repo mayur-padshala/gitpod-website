@@ -41,15 +41,6 @@ export const features: Feature[] = [
   {
     title: "Your environment, your tools, your&nbsp;craft",
     paragraph:
-      "We adapt, so you don't need to. That's why we natively integrated JetBrains IDEs into Gitpod next to VS Code. Don't limit yourself or your team to a single vendor and choose from the best options available.",
-    image: {
-      src: "/images/jetbrains-space/ides.png",
-      alt: "Multiple IDEs supported by Gitpod",
-    },
-  },
-  {
-    title: "Your environment, your tools, your&nbsp;craft",
-    paragraph:
       "We adapt, so you don't need to. That's why we natively integrated JetBrains IDEs into Gitpod next to VS Code and other editors. Don't limit yourself or your team to one editing experience and choose from the best options available.",
     image: {
       src: "/svg/jetbrains-space/ides.svg",
@@ -61,10 +52,7 @@ export const features: Feature[] = [
     title: "Ephemeral workspaces",
     paragraph:
       "Spin up preconfigured, standardized dev environments from any git context when you need them and close them when you're done. Once you’ve experienced the freedom, you won’t go back to the friction of long-living stateful environments.",
-    image: {
-      src: "/svg/features/muti-track-development.svg",
-      alt: "Ephemeral Workspaces",
-    },
+    previewComponent: multiTrackDevelopmentSvelte,
   },
 ];
 
