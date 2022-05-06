@@ -94,6 +94,37 @@
   .ol-alpha {
     @apply list-outside list-alpha;
   }
+
+  .stroked {
+    @apply relative;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      @apply absolute top-0 left-0 right-0 bottom-0;
+      background: linear-gradient(to bottom, #ffffff, #ece7e5);
+      border-radius: inherit;
+      z-index: -3;
+    }
+
+    &::after {
+      content: "";
+      @apply absolute;
+      border-radius: inherit;
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+      @apply bg-card;
+      z-index: -2;
+    }
+  }
+
+  body.dark .stroked {
+    &::before {
+      background: linear-gradient(to bottom, #332d23, #0f0e0b);
+    }
+  }
 }
 
 .docs-toc-item::before {

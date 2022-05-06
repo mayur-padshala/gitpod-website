@@ -7,6 +7,7 @@
   export let brandShadow: boolean = false;
   export let size: CardSize;
   export let styles: string = "";
+  export let stroked: boolean = true;
 </script>
 
 <style lang="postcss">
@@ -38,6 +39,7 @@
   style={styles}
   class="shadow-normal dark:shadow-none {background} {size} {className}"
   class:brand={brandShadow}
+  class:stroked
 >
   <slot />
 </div>

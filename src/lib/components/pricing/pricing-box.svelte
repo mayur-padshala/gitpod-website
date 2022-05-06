@@ -53,6 +53,7 @@
   size="small"
   class={`box flex w-full max-w-xs sm:w-[320px] gap-small py-small flex-col justify-between items-center bg-card px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small  text-center transition-all duration-200 hover:shadow-brand`}
   brandShadow={spiced}
+  stroked={false}
 >
   <div class="flex flex-col">
     <h2 class="h4">{title}</h2>
