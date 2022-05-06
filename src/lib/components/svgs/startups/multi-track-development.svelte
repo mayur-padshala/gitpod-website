@@ -5,8 +5,8 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <g opacity=".35" filter="url(#abc)">
-    <g clip-path="url(#bcd)">
+  <g opacity=".35" filter="url(#abc-mt)">
+    <g clip-path="url(#bcd-mt)">
       <rect
         x="75"
         y="56"
@@ -27,8 +27,8 @@
       <path fill="#FAB15A" d="M75 241.706h233.991v29.713H75z" />
     </g>
   </g>
-  <g opacity=".5" filter="url(#c)">
-    <g clip-path="url(#d)">
+  <g opacity=".5" filter="url(#c-mt)">
+    <g clip-path="url(#d-mt)">
       <rect
         x="391.161"
         y="56"
@@ -49,8 +49,8 @@
       <path fill="#FFB45B" d="M391.162 241.709h233.991v29.713H391.162z" />
     </g>
   </g>
-  <g filter="url(#e)">
-    <g clip-path="url(#f)">
+  <g filter="url(#e-mt)">
+    <g clip-path="url(#f-mt)">
       <rect
         x="205.25"
         y="101.551"
@@ -72,7 +72,7 @@
     </g>
   </g>
   <defs>
-    <clipPath id="bcd">
+    <clipPath id="bcd-mt">
       <rect
         x="75"
         y="56"
@@ -82,7 +82,7 @@
         fill="#fff"
       />
     </clipPath>
-    <clipPath id="d">
+    <clipPath id="d-mt">
       <rect
         x="391.161"
         y="56"
@@ -92,7 +92,7 @@
         fill="#fff"
       />
     </clipPath>
-    <clipPath id="f">
+    <clipPath id="f-mt">
       <rect
         x="205.25"
         y="101.551"
@@ -103,7 +103,7 @@
       />
     </clipPath>
     <filter
-      id="abc"
+      id="abc-mt"
       x=".717"
       y=".288"
       width="382.404"
@@ -133,7 +133,7 @@
       <feBlend in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
     </filter>
     <filter
-      id="c"
+      id="c-mt"
       x="316.878"
       y=".288"
       width="382.404"
@@ -163,7 +163,7 @@
       <feBlend in="SourceGraphic" in2="effect2_dropShadow" result="shape" />
     </filter>
     <filter
-      id="e"
+      id="e-mt"
       x="130.967"
       y="45.839"
       width="382.404"

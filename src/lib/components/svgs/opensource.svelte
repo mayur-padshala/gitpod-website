@@ -5,7 +5,7 @@
       height="96"
       x="20"
       y="53"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       class="fill-off-black dark:fill-sand-light"
@@ -19,7 +19,7 @@
       height="96"
       x="150"
       y="15"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       fill="#2684FF"
@@ -34,7 +34,7 @@
       height="96"
       x="280"
       y="53"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><g clip-path="url(#clip0)"
       ><path
@@ -54,7 +54,7 @@
       height="96"
       x="20"
       y="173"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       fill="#E24329"
@@ -84,7 +84,7 @@
       height="96"
       x="84"
       y="293"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       fill="#0089D6"
@@ -96,7 +96,7 @@
       height="96"
       x="280"
       y="173"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       fill="#326DE6"
@@ -111,7 +111,7 @@
       height="96"
       x="216"
       y="293"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       fill="#EA4335"
@@ -132,7 +132,7 @@
       height="96"
       x="150"
       y="158"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
       rx="20"
     /><path
       fill="url(#paint1_linear)"

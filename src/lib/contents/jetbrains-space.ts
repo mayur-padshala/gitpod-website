@@ -13,6 +13,7 @@ import multiTrackDevelopmentSvelte from "$lib/components/svgs/startups/multi-tra
 import githubMarkSvelte from "$lib/components/svgs/github-mark.svelte";
 // @ts-ignore
 import awsSvelte from "$lib/components/svgs/aws.svelte";
+import idesSvelte from "$lib/components/svgs/ides.svelte";
 
 export const openSourceFeature = {
   title: "Open-source",
@@ -42,10 +43,7 @@ export const features: Feature[] = [
     title: "Your environment, your tools, your&nbsp;craft",
     paragraph:
       "We adapt, so you don't need to. That's why we natively integrated JetBrains IDEs into Gitpod next to VS Code and other editors. Don't limit yourself or your team to one editing experience and choose from the best options available.",
-    image: {
-      src: "/svg/jetbrains-space/ides.svg",
-      alt: "Multiple IDEs supported by Gitpod",
-    },
+    previewComponent: idesSvelte,
   },
   openSourceFeature,
   {
