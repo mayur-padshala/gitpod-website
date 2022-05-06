@@ -26,7 +26,7 @@
 
 <div>
   <LinkButton
-    class="flex h-14 items-center justify-between group"
+    class="flex h-14 items-center justify-between group !p-3"
     variant="cta"
     size="large"
     href={`https://gitpod.io#${githubUrl}`}
@@ -41,7 +41,7 @@
       <img
         src={`/${logo}`}
         {alt}
-        class="mr-micro transition-all duration-200 delay-[50ms] grayscale group-focus:grayscale-0 group-hover:grayscale-0"
+        class="mr-macro transition-all duration-200 delay-[50ms] grayscale group-focus:grayscale-0 group-hover:grayscale-0"
         width="24"
         height="24"
       />
