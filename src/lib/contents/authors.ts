@@ -268,6 +268,24 @@ export const authors: { [idx: string]: Author } = {
     },
     description: "",
   },
+  Furisto: {
+    name: "Thomas Schubart",
+    socialProfiles: {
+      github: "Furisto",
+      twitter: "",
+      linkedin: "",
+    },
+    description: "",
+  },
+  lucasvaltl: {
+    name: "Lucas Valtl",
+    socialProfiles: {
+      github: "lucasvaltl",
+      twitter: "",
+      linkedin: "",
+    },
+    description: "",
+  },
   brandonroberts: {
     name: "Brandon Roberts",
     socialProfiles: {
@@ -284,6 +302,25 @@ export const authors: { [idx: string]: Author } = {
       twitter: "TheShroppieBeek",
     },
     description: "",
+  },
+  "nancy-chauhan": {
+    name: "Nancy Chauhan",
+    socialProfiles: {
+      github: "",
+      twitter: "_nancychauhan",
+      linkedin: "",
+    },
+    description: "",
+  },
+  helenjoscott: {
+    name: "Helen Scott",
+    socialProfiles: {
+      github: "",
+      twitter: "HelenJoScott",
+      linkedin: "",
+    },
+    description:
+      "Helen Scott is a Java Developer Advocate at JetBrains. She has worked at numerous software companies in the last 20 years.",
   },
 };
 

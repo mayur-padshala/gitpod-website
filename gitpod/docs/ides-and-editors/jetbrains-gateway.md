@@ -9,6 +9,8 @@ title: JetBrains Gateway
 
 # {title}
 
+> **Please note:** {title} is currently in beta. If you experience any issues, or have feedback, please [get in touch](/contact/support).
+
 [JetBrains Gateway](https://www.jetbrains.com/remote-development/gateway/) is your single entry point to all remote development environments when using JetBrains IDE's. JetBrains Gateway is a compact desktop app that allows you to work remotely with a JetBrains IDE without downloading the full IDE. Gitpod works with JetBrains Gateway via a custom Gitpod [JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway).
 
 Using JetBrains Gateway on Desktop with Gitpod, allows you to:
@@ -18,7 +20,9 @@ Using JetBrains Gateway on Desktop with Gitpod, allows you to:
 
 All without leaving needing to leave your desktop.
 
-JetBrains Gateway is the underlying technology for the Gitpod JetBrains IDE support of:
+## JetBrains IDE support
+
+JetBrains Gateway is the underlying technology which enables the Gitpod integration. Support for JetBrains IDEs will be rolled out incrementally. The [JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway) is a standalone feature, so its release cycle is independent individual JetBrains IDE support.
 
 - [IntelliJ](/docs/ides-and-editors/intellij)
 - [GoLand](/docs/ides-and-editors/goland)
@@ -30,8 +34,8 @@ JetBrains Gateway is the underlying technology for the Gitpod JetBrains IDE supp
 `youtube: 8djaRYT2FAY`
 
 1. **Install [JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway)** - With the [JetBrains Gateway and Gitpod](jetbrains-gateway) plugin you can create and manage your latest 20 Gitpod workspaces.
-2. **Install the Gitpod plugin** - Navigate to the JetBrains Gateway preferences page and select the plugins tab to search and install the [Gitpod plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway).
-3. **Update your Gitpod preferences** - Select your preferred JetBrains IDE on the [Gitpod preferences page](https://gitpod.io/preferences) which will set your default Desktop IDE for future workspace starts.
+2. **Install the Gitpod plugin** - Open JetBrains Gateway and you'll see the Gitpod logo on the main page. Click "install" to install the [Gitpod plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway) for JetBrains Gateway.
+3. **Update your Gitpod preferences** - Select your preferred JetBrains IDE on the [Gitpod preferences page](https://gitpod.io/preferences) which will set your default IDE for future workspace starts.
 4. **Start (or restart) your workspace** - Either start a workspace directly from within the [JetBrains Gateway](jetbrains-gateway) via the Gitpod plugin **OR** open a new workspace directly in Gitpod where on workspace start you will be prompted to open your preferred JetBrains IDE for that workspace.
 
 ### How does JetBrains and Gitpod work?
