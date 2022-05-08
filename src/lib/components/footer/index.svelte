@@ -109,7 +109,6 @@
         </li>
       </Section>
     </div>
-    <ThemeSwitcher />
     <div
       class="flex flex-col-reverse items-center justify-between border-t border-solid border-divider pt-xx-small md:flex-row md:pt-x-small"
     >
@@ -127,6 +126,7 @@
           >Copyright &copy; {new Date().getFullYear()} Gitpod</span
         >
       </div>
+      <ThemeSwitcher />
       <div class="flex space-x-macro">
         {#each socialLinks as link}
           <FooterLink
