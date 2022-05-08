@@ -8,20 +8,14 @@
   export let narrow = false;
   export let skipToEnd = false;
   export let alt = "";
-
-  $: colors = dark
-    ? {
-        black: "#F9F9F9",
-        orange: "#fc8800",
-        green: "#57c700",
-        blue: "#FFE4BC",
-      }
-    : {
-        black: "rgba(18, 16, 12, 0.7)",
-        orange: "#fc8800",
-        green: "#57c700",
-        blue: "#0099EF",
-      };
+  export let black = dark ? "#F9F9F9" : "rgba(18, 16, 12, 0.7)";
+  export let blue = dark ? "#FFE4BC" : "#0099EF";
+  let colors = {
+    black,
+    orange: "#fc8800",
+    green: "#57c700",
+    blue,
+  };
 
   let wrapper: HTMLDivElement;
   let canvas: HTMLCanvasElement;
@@ -50,6 +44,7 @@
   }
 
   onMount(() => {
+    console.log(colors);
     skipToEnd = $reducedMotion;
     let font_size: number;
     let line_height: number;
@@ -410,6 +405,9 @@
   .wrapper.dark {
     background: rgba(18, 16, 12, 0.7);
   }
+  :global(body.dark) .wrapper {
+    background: #373531;
+  }
   .wrapper.shadowGrey {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08),
       0px 5px 20px rgba(0, 0, 0, 0.12);
@@ -427,6 +425,13 @@
     background: rgba(249, 249, 249, 0.9);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+  }
+  :global(body.dark) .titlebar {
+    background: #514f4d;
+
+    &::before {
+      background: #807c78;
+    }
   }
   .dark .titlebar {
     background: #696662;

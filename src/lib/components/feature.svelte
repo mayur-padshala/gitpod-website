@@ -124,10 +124,11 @@
         <div class="hidden dark:block">
           <Console
             source={terminal.source}
-            dark={true}
             narrow={terminal.narrow}
             shadow={terminal.shadow}
             skipToEnd={terminal.skipToEnd}
+            black="#999795"
+            blue="#57c700"
           />
         </div>
       {/if}
