@@ -2,7 +2,7 @@
   import LinkButton from "$lib/components/ui-library/link-button";
 </script>
 
-<style lang="scss">
+<style lang="postcss">
   .buttons {
     display: inline-flex;
     flex-direction: column;
@@ -22,6 +22,7 @@
   } */
 
   .prefix {
+    color: var(--dark-grey);
     display: inline-block;
     padding: 0 var(--micro);
     margin-top: var(--macro);
