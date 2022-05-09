@@ -1,6 +1,7 @@
 <script lang="ts">
   import { reducedMotion } from "$lib/stores/reduce-motion";
   import { onMount } from "svelte";
+  import { theme } from "$lib/stores/theme";
 
   export let source = "";
   export let dark = false;
@@ -8,13 +9,17 @@
   export let narrow = false;
   export let skipToEnd = false;
   export let alt = "";
-  export let black = dark ? "#F9F9F9" : "rgba(18, 16, 12, 0.7)";
-  export let blue = dark ? "#FFE4BC" : "#0099EF";
-  let colors = {
-    black,
+  let black = dark ? "#F9F9F9" : "rgba(18, 16, 12, 0.7)";
+  let blue = dark ? "#FFE4BC" : "#0099EF";
+  let currentTheme = $theme;
+
+  $: isDark = currentTheme === "dark";
+
+  $: colors = {
+    black: isDark ? "#999795" : black,
     orange: "#fc8800",
     green: "#57c700",
-    blue,
+    blue: isDark ? "#57c700" : blue,
   };
 
   let wrapper: HTMLDivElement;
@@ -44,7 +49,6 @@
   }
 
   onMount(() => {
-    console.log(colors);
     skipToEnd = $reducedMotion;
     let font_size: number;
     let line_height: number;
