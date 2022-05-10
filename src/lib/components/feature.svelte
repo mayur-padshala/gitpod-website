@@ -1,11 +1,11 @@
 <script lang="ts">
   import { isAnExternalLink } from "$lib/utils/helpers";
   import LinkButton from "$lib/components/ui-library/link-button";
-
   import type { Feature } from "$lib/types/feature.type";
   import Console from "./console.svelte";
   import Section from "./section.svelte";
   import ButtonsWrapper from "./buttons-wrapper.svelte";
+  import Lottie from "./lottie.svelte";
 
   export let feature: Feature;
   const {
@@ -17,6 +17,7 @@
     terminal,
     image,
     previewComponent,
+    lottie,
     showTheMediaFirstOnMobile,
     footnote,
     headingLevel,
@@ -133,6 +134,9 @@
           <svelte:component this={previewComponent} />
         {/if}
       </div>
+      {#if lottie}
+        <Lottie {lottie} />
+      {/if}
       {#if footnote}
         <p class="fine-print mt-x-small max-w-md mx-auto">{@html footnote}</p>
       {/if}

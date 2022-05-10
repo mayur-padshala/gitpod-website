@@ -23,6 +23,9 @@ export const collaborationFeature: Feature = {
     classNames: "shadow-medium",
     styles: "border-radius: 7px",
   },
+  // lottie: {
+  //   src: '/lottie/share_workspace.json'
+  // }
 };
 
 export const codeAnywhereFeature: Feature = {
