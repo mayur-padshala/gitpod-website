@@ -128,14 +128,14 @@
           style={image.styles}
         />
       {/if}
-      {#if footnote}
-        <p class="fine-print mt-x-small max-w-md mx-auto">{@html footnote}</p>
-      {/if}
       <div class="component-container">
         {#if previewComponent}
           <svelte:component this={previewComponent} />
         {/if}
       </div>
+      {#if footnote}
+        <p class="fine-print mt-x-small max-w-md mx-auto">{@html footnote}</p>
+      {/if}
     </div>
   </div>
 </Section>
