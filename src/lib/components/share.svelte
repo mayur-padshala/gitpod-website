@@ -11,6 +11,11 @@
   h2 {
     @apply mb-0 text-h6;
   }
+
+  div :global(svg),
+  img {
+    @apply transition-all duration-200;
+  }
 </style>
 
 <div class="flex flex-col md:flex-row items-center {clazz}">
@@ -24,7 +29,7 @@
         data-analytics={`{"variant":"social_media","context":"` +
           (link.name || link.icon.alt).toLowerCase() +
           `_share"}`}
-        class="p-1 md:p-0.5"
+        class="p-1 md:p-0.5 hover:opacity-80 focus:opacity-80"
       >
         {#if link.svg}
           <svelte:component this={link.svg} class="h-10 w-10 md:h-7 md:w-7" />
