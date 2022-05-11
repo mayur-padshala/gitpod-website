@@ -74,7 +74,7 @@
   }
 
   .scrolled-out {
-    @apply border-divider bg-nav !important;
+    @apply border-divider bg-nav;
     backdrop-filter: saturate(0.5) blur(5px);
   }
 
