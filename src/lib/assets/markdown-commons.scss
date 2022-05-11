@@ -44,8 +44,12 @@
     }
   }
 
+  thead {
+    @apply bg-sand-dark;
+  }
+
   td:first-child {
-    @apply font-bold text-black;
+    @apply font-bold text-important;
   }
 
   th + th,
@@ -134,4 +138,33 @@ body.dark {
       filter: invert(100%) grayscale(100%);
     }
   }
+
+  h2,
+  h2,
+  h3,
+  h4,
+  h4,
+  h5 {
+    &:hover,
+    &:focus {
+      .icon.icon-link::after {
+        filter: invert(100%) grayscale(100%);
+      }
+    }
+  }
+
+  .language-sh,
+  .language-undefined,
+  .language-shell {
+    color: #2aa198;
+  }
+
+  thead {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: var(--divider);
+  }
+}
+
+.prose {
+  @apply text-body;
 }

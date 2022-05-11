@@ -71,6 +71,12 @@
   });
 </script>
 
+<style lang="postcss">
+  div :global(.text-important) {
+    @apply text-important !important;
+  }
+</style>
+
 <div
   class:xl:block={show}
   use:renderPageToc

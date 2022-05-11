@@ -96,7 +96,7 @@
       class={`px-4 ${$subMenuState ? "block" : "hidden"}`}
       id="sub-menu"
     >
-      <ul class="divide-y divide-sand-dark">
+      <ul class="divide-y divide-divider">
         {#each currentSection?.subMenu as sub}
           <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>
             {sub.title}

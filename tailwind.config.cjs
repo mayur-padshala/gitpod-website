@@ -128,8 +128,20 @@ module.exports = {
               borderLeftWidth: "0",
               borderRadius: "0.75rem",
               background: "var(--brand-light)",
+              a: {
+                color: "var(--link-grey)",
+              },
+              "a:hover": {
+                color: "var(--black)",
+              },
+              "a:focus": {
+                color: "var(--black)",
+              },
               code: {
                 background: "var(--brand-almost-ripe)",
+              },
+              ul: {
+                color: "var(--dark-grey)",
               },
               p: {
                 color: "var(--dark-grey)",
@@ -204,6 +216,9 @@ module.exports = {
               ul: {
                 marginLeft: "var(--x-small)",
               },
+              strong: {
+                color: "var(--important)",
+              },
             },
             ol: {
               listStylePosition: "inside",
@@ -245,9 +260,15 @@ module.exports = {
               "@media (min-width: 768px)": {
                 minWidth: "31.25rem",
               },
+              strong: {
+                color: "var(--important)",
+              },
             },
             tbody: {
-              background: "var(--off-white)",
+              background: "var(--card)",
+            },
+            tr: {
+              "border-color": "var(--divider)",
             },
             td: {
               lineHeight: "150%",
@@ -260,7 +281,7 @@ module.exports = {
               verticalAlign: "top",
               "&:first-child": {
                 code: {
-                  color: "var(--black)",
+                  color: "var(--dark-grey)",
                   fontWeight: "700",
                 },
               },
@@ -273,9 +294,7 @@ module.exports = {
               marginLeft: "1.5rem",
               padding: "0.75rem 1.5rem",
               textAlign: "left",
-            },
-            thead: {
-              background: "var(--sand-dark)",
+              color: "var(--important)",
             },
             ul: {
               listStyle: "none",
