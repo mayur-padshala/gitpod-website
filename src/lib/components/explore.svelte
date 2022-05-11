@@ -173,7 +173,7 @@
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
-          : 'Illustration-small-dark.png'}"
+          : 'illustration-small-dark.png'}"
         class:pt-micro={useKumquatIllustration}
         class="small small-dark hidden dark:block"
         alt="Gitpod in a Nutshell"
