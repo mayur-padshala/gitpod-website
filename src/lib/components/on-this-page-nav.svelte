@@ -1,88 +1,44 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { docsMeta } from "$lib/stores/docs-meta";
+  import type { DocsMeta } from "$lib/types/docs-meta";
 
-  let clazz = "";
-  export { clazz as class };
-
-  let show = false;
-  const renderPageToc = (node: HTMLElement) => {
-    if (document.getElementsByClassName("toc").length > 0) {
-      node.appendChild(document.getElementsByClassName("toc")[0]);
-      show = true;
-    } else {
+  //check for markdown headers in docsMeta
+  function checkHeaders(obj: DocsMeta) {
+    if (obj.headings.length > 0) {
+      return true;
     }
-  };
-
-  let visibleSectionIds = [];
-  onMount(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (
-              entry.target.getBoundingClientRect().y >
-              document
-                .querySelector(`#${visibleSectionIds[0]}`)
-                ?.getBoundingClientRect().y
-            ) {
-              // Scrolling down
-              visibleSectionIds = [...visibleSectionIds, entry.target.id];
-            } else {
-              // Scrolling up
-              visibleSectionIds = [entry.target.id, ...visibleSectionIds];
-            }
-            visibleSectionIds.forEach((id) => {
-              document
-                .querySelector(`#toc-wrapper a[href="#${id}"`)
-                ?.classList.remove("text-important");
-            });
-            document
-              .querySelector(`#toc-wrapper a[href="#${visibleSectionIds[0]}"`)
-              ?.classList.add("text-important");
-          } else {
-            if (visibleSectionIds.includes(entry.target.id)) {
-              visibleSectionIds = visibleSectionIds.filter(
-                (id) => id !== entry.target.id
-              );
-              document
-                .querySelector(`#toc-wrapper a[href="#${entry.target.id}"`)
-                ?.classList.remove("text-important");
-              document
-                .querySelector(`#toc-wrapper a[href="#${visibleSectionIds[0]}"`)
-                ?.classList.add("text-important");
-            }
-          }
-        });
-      },
-      { threshold: 1 }
-    );
-
-    const contentHeadings = Array.from(
-      document.querySelectorAll("h2, h3, h4, h5, h6")
-    );
-
-    contentHeadings.forEach((heading) => {
-      observer.observe(heading);
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  });
+    return false;
+  }
 </script>
 
-<style lang="postcss">
-  div :global(.text-important) {
-    @apply text-important !important;
-  }
-</style>
-
-<div
-  class:xl:block={show}
-  use:renderPageToc
-  id="toc-wrapper"
-  class="hidden self-start flex-none w-1/4 pl-8 sticky top-24 max-h-[calc(100vh-6rem)] text-base pb-10 overflow-x-hidden overflow-y-auto {clazz}"
-  data-analytics={`{"position":"main","context":"on_this_page"}`}
->
-  <p><strong class="text-important">On this page</strong></p>
-</div>
+{#if checkHeaders($docsMeta)}
+  <div
+    class="on-this-page top-24 self-start sticky overflow-x-hidden overflow-y-auto w-1/4 text-sm"
+  >
+    <div class="font-semibold">On this Page</div>
+    <ul class="">
+      {#each $docsMeta.headings as heading}
+        <li>
+          <a id={heading.slug} class="no-underline" href="#{heading.slug}"
+            >{heading.title}</a
+          >
+          {#if heading.children?.length > 0}
+            <ul
+              class="ml-2 border-l space-y-6 lg:space-y-2 border-divider dark:border-slate-800"
+            >
+              {#each heading.children as child}
+                <li>
+                  <a
+                    id={child.slug}
+                    class="no-underline block border-l pl-4 -ml-px"
+                    href="#{child.slug}">{child.title}</a
+                  >
+                </li>
+              {/each}
+            </ul>
+          {/if}
+        </li>
+      {/each}
+    </ul>
+  </div>
+{/if}
