@@ -39,7 +39,7 @@
       <Search showEditInGitpod={false} />
     </div>
     <MobileMenu {MENU} />
-    <div class="lg:border-l border-r border-divider">
+    <div class="lg:border-l lg:border-r lg:border-divider">
       <slot />
     </div>
   </div>
