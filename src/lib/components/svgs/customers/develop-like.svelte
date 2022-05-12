@@ -1,4 +1,10 @@
-<svg width="475" height="373" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  viewBox="0 0 475 373"
+  width="475"
+  height="373"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
   <g filter="url(#a)">
     <g clip-path="url(#b)">
       <rect
@@ -7,7 +13,7 @@
         width="131"
         height="131"
         rx="29.163"
-        class="fill-card dark:fill-bg"
+        class="fill-card dark:fill-divider"
       />
       <path
         d="M140.559 248.462c0-21.724-17.511-39.334-39.111-39.334-21.6 0-39.111 17.61-39.111 39.334 0 19.632 14.302 35.904 33 38.855v-27.486h-9.93v-11.369h9.93v-8.666c0-9.858 5.839-15.303 14.773-15.303 4.279 0 8.754.768 8.754.768v9.68h-4.931c-4.859 0-6.374 3.032-6.374 6.142v7.379h10.847l-1.734 11.369h-9.113v27.486c18.698-2.951 33-19.223 33-38.855Z"
@@ -26,7 +32,7 @@
       width="84.53"
       height="84.53"
       rx="18.818"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
     />
     <path
       fill-rule="evenodd"
@@ -42,7 +48,7 @@
       width="213.551"
       height="213.551"
       rx="47.541"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
     />
     <g clip-path="url(#e)">
       <path
@@ -75,7 +81,7 @@
       width="119.888"
       height="119.888"
       rx="26.69"
-      class="fill-card dark:fill-bg"
+      class="fill-card dark:fill-divider"
     />
     <g clip-path="url(#g)">
       <path

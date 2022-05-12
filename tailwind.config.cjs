@@ -167,6 +167,12 @@ module.exports = {
               "&::before": {
                 content: "none !important",
               },
+              a: {
+                color: "var(--link-grey)",
+              },
+              "a:hover": {
+                color: "var(--black)",
+              },
             },
             h1: {
               fontSize: "var(--h3)",

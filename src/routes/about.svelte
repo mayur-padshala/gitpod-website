@@ -14,7 +14,7 @@
 
 <style lang="postcss">
   .othercompanies span {
-    @apply px-2 py-[0.3rem] rounded-xl bg-tertiary;
+    @apply px-2 py-[0.3rem] rounded-xl bg-tertiary dark:text-dark-grey;
   }
 </style>
 

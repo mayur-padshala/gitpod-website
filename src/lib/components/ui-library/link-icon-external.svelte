@@ -23,7 +23,7 @@
 </style>
 
 <a
-  class="link-icon-external inline-flex text-center py-2 px-4 text-btn-small leading-4 rounded-xl shadow-light font-semibold bg-card text-important hover:bg-tertiary focus:bg-tertiary dark:hover:bg-quaternary dark:hover:text-black"
+  class="link-icon-external inline-flex text-center py-2 px-4 text-btn-small leading-4 rounded-xl shadow-light dark:shadow-none font-semibold bg-card text-important hover:bg-tertiary focus:bg-tertiary dark:hover:bg-quaternary dark:hover:text-black"
   {href}
   target="_blank"
   rel="noopener"

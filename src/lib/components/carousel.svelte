@@ -4,7 +4,7 @@
   export { clazz as class };
 </script>
 
-<style>
+<style lang="postcss">
   div {
     scroll-snap-type: x mandatory;
     scrollbar-width: thin;

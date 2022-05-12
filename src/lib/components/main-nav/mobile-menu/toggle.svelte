@@ -57,8 +57,8 @@
 <button on:click={handleToggle} aria-label="Show / hide nav items" class="py-3">
   <div
     class="flex flex-col items-center justify-center h-6 w-12 rounded-xl transition-all duration-200 {$menuState
-      ? 'bg-sand-dark dark:bg-bg'
-      : 'bg-important dark:bg-card'}"
+      ? 'bg-sand-dark dark:bg-light-black'
+      : 'bg-important dark:bg-light-black'}"
     class:open={$menuState}
   />
 </button>
