@@ -117,7 +117,7 @@
 </style>
 
 <div>
-  <Card size="small" class="youtube">
+  <Card size="small" class="youtube" stroked={false}>
     <iframe
       id={randomId}
       src={`https://www.youtube.com/embed/${embedId}?enablejsapi=1`}

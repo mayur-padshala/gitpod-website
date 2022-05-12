@@ -7,6 +7,7 @@ export type Feature = {
   secondaryButton?: { text: string; href: string };
   featureList?: string[];
   image?: {
+    darkSrc?: string;
     src: string;
     alt: string;
     height?: number;

@@ -8,6 +8,9 @@
   :global(.code) {
     @apply p-micro bg-white rounded-2xl text-base text-sub my-macro;
   }
+  :global(body.dark) :global(.code) {
+    @apply bg-bg;
+  }
   :global(.code) :global(span) {
     color: #65a30d;
   }

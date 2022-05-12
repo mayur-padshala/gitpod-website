@@ -46,7 +46,7 @@
       >
         <svelte:component
           this={icon}
-          class="mx-auto"
+          class="mx-auto {iconClassNames}"
           style="transform: {transform}"
         />
       </div>

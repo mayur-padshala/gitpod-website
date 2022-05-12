@@ -1,3 +1,17 @@
+<script lang="ts">
+  export let inActive: boolean;
+</script>
+
+<style lang="postcss">
+  path {
+    @apply transition-all duration-200;
+  }
+
+  .inactive path {
+    @apply fill-divider-light;
+  }
+</style>
+
 <svg
   width="112"
   height="30"
@@ -5,6 +19,7 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
   {...$$props}
+  class:inactive={inActive}
 >
   <g clip-path="url(#clip0_6_51)">
     <path

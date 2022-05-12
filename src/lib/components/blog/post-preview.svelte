@@ -26,7 +26,7 @@
   class:pointer-events-none={!availability}
   tabindex={!availability && -1}
   class:bg-sand-dark={!isMostRecent}
-  class="flex flex-col max-w-sm lg:max-w-none group {!isMostRecent
+  class="flex flex-col max-w-sm lg:max-w-none stroked group {!isMostRecent
     ? 'bg-sand-dark dark:bg-card'
     : ''} {layout === 'column'
     ? ''
@@ -42,7 +42,7 @@
         class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full {teaserHeightClass} {layout ===
         'column'
           ? ''
-          : 'lg:rounded-l-xl lg:rounded-t-none lg:w-60 lg:h-full'}"
+          : 'lg:rounded-l-xl lg:rounded-tr-none lg:w-60 lg:h-full'}"
         style={`background-image: url(${
           post.isNotAnActualPost
             ? post.image

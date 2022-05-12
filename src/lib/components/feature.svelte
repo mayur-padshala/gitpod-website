@@ -125,7 +125,15 @@
         <img
           src={image.src}
           alt={image.alt}
-          class="{image.classNames} mx-auto"
+          class="{image.classNames} mx-auto {image.darkSrc
+            ? 'dark:hidden'
+            : ''}"
+          style={image.styles}
+        />
+        <img
+          src={image.darkSrc}
+          alt={image.alt}
+          class="{image.classNames} mx-auto hidden dark:block"
           style={image.styles}
         />
       {/if}

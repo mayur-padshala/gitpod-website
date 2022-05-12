@@ -44,7 +44,10 @@
               class=""
             />
           {:else}
-            <svelte:component this={quote.companyLogo} />
+            <svelte:component
+              this={quote.companyLogo}
+              inActive={selectedQuote !== quote}
+            />
           {/if}
         </button>
       {/each}

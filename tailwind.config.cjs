@@ -105,6 +105,7 @@ module.exports = {
         slight: "var(--shadow-slight)",
         medium: "var(--shadow-medium)",
         brand: "var(--shadow-brand)",
+        highlight: "var(--shadow-highlight)",
       },
       zIndex: {
         "-10": "-10",

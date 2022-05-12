@@ -20,6 +20,8 @@ import prismaSvelte from "$lib/components/svgs/opensource/prisma.svelte";
 import prometheusSvelte from "$lib/components/svgs/opensource/prometheus.svelte";
 // @ts-ignore
 import theiaSvelte from "$lib/components/svgs/opensource/theia.svelte";
+import openVscodeSvelte from "$lib/components/svgs/opensource/open-vscode.svelte";
+import werftSvelte from "$lib/components/svgs/opensource/werft.svelte";
 
 export const quotes: Quote[] = [
   {
@@ -167,10 +169,7 @@ export const cards: Card[] = [
     },
   },
   {
-    icon: {
-      src: "/svg/opensource/open-vscode.svg",
-      alt: "OpenVS Code",
-    },
+    icon: openVscodeSvelte,
     transform: "scale(1.5)",
     title: "OpenVS Code",
     text: "A version of VS Code that runs a server on a remote machine and allows access through a modern web browser.",
@@ -192,10 +191,7 @@ export const cards: Card[] = [
     },
   },
   {
-    icon: {
-      src: "/svg/opensource/werft.svg",
-      alt: "Werft",
-    },
+    icon: werftSvelte,
     title: "Werft",
     text: "Werft is a Kubernetes-native CI system. It knows no pipelines, just jobs and each job is a Kubernetes pod. What you do in that pod is up to you.",
     link: {
