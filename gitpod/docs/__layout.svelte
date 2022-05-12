@@ -21,7 +21,8 @@
   import { MENU } from "$lib/contents/docs/menu";
   import { docsMeta as docsMetaStore } from "$lib/stores/docs-meta";
   import OnThisPageNav from "$lib/components/navigation/on-this-page-nav.svelte";
-  export let docsMeta;
+  import type { DocsMeta } from "../../lib/types/docs-meta";
+  export let docsMeta: DocsMeta;
 
   $: docsMetaStore.set(docsMeta);
 </script>
