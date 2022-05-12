@@ -130,12 +130,14 @@
             : ''}"
           style={image.styles}
         />
-        <img
-          src={image.darkSrc}
-          alt={image.alt}
-          class="{image.classNames} mx-auto hidden dark:block"
-          style={image.styles}
-        />
+        {#if image.darkSrc}
+          <img
+            src={image.darkSrc}
+            alt={image.alt}
+            class="{image.classNames} mx-auto hidden dark:block"
+            style={image.styles}
+          />
+        {/if}
       {/if}
       <div class="component-container">
         {#if previewComponent}
