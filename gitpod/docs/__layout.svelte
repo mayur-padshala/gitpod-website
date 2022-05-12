@@ -28,13 +28,13 @@
 </script>
 
 <div class="pb-10 lg:flex lg:pt-10">
-  <div class="hidden lg:block lg:w-1/4 lg:pt-12">
+  <div class="hidden lg:block lg:w-1/5 lg:pt-12">
     <div class="sticky top-24 self-start">
       <Search showEditInGitpod={false} />
       <Menu {MENU} />
     </div>
   </div>
-  <div class="lg:w-1/2 lg:pl-4">
+  <div class="lg:w-3/5 lg:pl-4">
     <div class="block lg:hidden">
       <Search showEditInGitpod={false} />
     </div>
@@ -44,7 +44,7 @@
     </div>
   </div>
   <div
-    class="lg:w-1/4 pl-8 hidden lg:block max-w-none flex-auto min-w-0 lg:pt-12"
+    class="lg:w-1/5 pl-8 hidden lg:block max-w-none flex-auto min-w-0 lg:pt-12"
   >
     <OnThisPageNav />
   </div>
