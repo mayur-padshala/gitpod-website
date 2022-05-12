@@ -66,35 +66,7 @@ const config = {
         customers:
           "./src/lib/components/customers/customers-content-layout.svelte",
       },
-      rehypePlugins: [
-        [
-          rehypeToc,
-          {
-            customizeTOC: (toc) => {
-              // The Toc always has an <ol> element, but it doesn't
-              // have children if the Markdown content contains no headings.
-              return toc.children[0].children.length === 0 ? false : toc;
-            },
-            customizeTOCItem: (toc, heading) => {
-              if (heading.tagName !== "h2") {
-                toc.properties.className = `${
-                  toc.properties.className || ""
-                } ml-4 my-macro docs-toc-item`;
-              } else {
-                toc.properties.className = `${
-                  toc.properties.className || ""
-                } relative my-micro`;
-              }
-              return toc;
-            },
-            cssClasses: {
-              listItem: "toc-level",
-            },
-            headings: ["h2", "h3", "h4", "h5", "h6"],
-            position: "beforebegin",
-          },
-        ],
-      ],
+      rehypePlugins: [],
       remarkPlugins: [
         [
           remarkExternalLinks,

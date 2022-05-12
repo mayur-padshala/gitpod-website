@@ -3,7 +3,7 @@
     const slug = url.pathname.replace(/\//g, "__");
     const res = await fetch(`/api/${slug}.docs.json`);
     try {
-      const data = await res.json();
+      const data = await res.clone().json();
       return { props: { docsMeta: data } };
     } catch (e) {
       return {
@@ -20,18 +20,31 @@
   import "$lib/assets/markdown-commons.scss";
   import { MENU } from "$lib/contents/docs/menu";
   import { docsMeta as docsMetaStore } from "$lib/stores/docs-meta";
+  import OnThisPageNav from "$lib/components/navigation/on-this-page-nav.svelte";
   export let docsMeta;
 
   $: docsMetaStore.set(docsMeta);
 </script>
 
 <div class="pb-10 lg:flex lg:pt-10">
-  <div class="hidden lg:block lg:w-1/4 lg:pt-24">
-    <Menu {MENU} />
+  <div class="hidden lg:block lg:w-1/4 lg:pt-12">
+    <div class="sticky top-24 self-start">
+      <Search showEditInGitpod={false} />
+      <Menu {MENU} />
+    </div>
   </div>
-  <div class="lg:w-3/4 lg:pl-4">
-    <Search showEditInGitpod={true} />
+  <div class="lg:w-1/2 lg:pl-4">
+    <div class="block lg:hidden">
+      <Search showEditInGitpod={false} />
+    </div>
     <MobileMenu {MENU} />
-    <slot />
+    <div class="lg:border-l border-r border-divider">
+      <slot />
+    </div>
+  </div>
+  <div
+    class="lg:w-1/4 pl-8 hidden lg:block max-w-none flex-auto min-w-0 lg:pt-12"
+  >
+    <OnThisPageNav />
   </div>
 </div>

@@ -8,7 +8,6 @@
   import FeedbackWidget from "./feedback-widget.svelte";
   import docsCurrentSectionStore from "$lib/stores/docs-current-section";
   import PrevNext from "./prev-next.svelte";
-  import OnThisPageNav from "../on-this-page-nav.svelte";
 
   /** @type {string} */
   export let section;
@@ -34,7 +33,6 @@
     <AnnouncementBanner />
     <slot />
   </div>
-  <OnThisPageNav />
 </div>
 <FeedbackWidget type="docs" class="my-huge" />
 <PrevNext />
