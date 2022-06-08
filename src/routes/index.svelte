@@ -17,10 +17,10 @@
   import Testimonials from "$lib/components/index/testimonials.svelte";
   import GetStarted from "$lib/components/index/get-started/index.svelte";
   import OpenGraph from "$lib/components/open-graph.svelte";
-  import UsedBy from "$lib/components/index/used-by.svelte";
   import SpinUp from "$lib/components/index/spin-up.svelte";
   import Section from "$lib/components/section.svelte";
   import Resources from "$lib/components/resources.svelte";
+  import AnimatedLogos from "$lib/components/animated-logos.svelte";
 </script>
 
 <OpenGraph
@@ -44,12 +44,12 @@
 </svelte:head>
 
 <Hero />
+<AnimatedLogos />
 <ChooseProject />
 <div id="choose-project-observer-target-bottom">
   <Features {features} />
 </div>
 <SectionScreenshot />
-<UsedBy title="Used by 500k+ developers" class="py-small" />
 <Features features={otherFeatures} />
 <Section>
   <Resources {cards} headingLevel="h2" />

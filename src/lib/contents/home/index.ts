@@ -92,7 +92,6 @@ export const brands: Brand[] = [
   shares,
   astrato,
   redwood,
-  codeInstitute,
 ];
 
 export const projects: Project[] = [
