@@ -35,6 +35,7 @@ export const google: Brand = {
 export const uber: Brand = {
   alt: "Uber",
   logo: Uber,
+  transform: "scale(.8)",
 };
 
 export const dataStax: Brand = {
@@ -92,6 +93,22 @@ export const brands: Brand[] = [
   shares,
   astrato,
   redwood,
+  codeInstitute,
+];
+
+export const logosAnimated: Brand[] = [
+  gitlab,
+  jetbrains,
+  google,
+  redwood,
+  uber,
+  shares,
+  dataStax,
+  freeCodeCamp,
+  amazon,
+  astrato,
+  fourGeeks,
+  codeInstitute,
 ];
 
 export const projects: Project[] = [

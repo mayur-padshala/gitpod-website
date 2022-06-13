@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { brands } from "$lib/contents/home";
+  import { logosAnimated } from "$lib/contents/home";
   import { onMount } from "svelte";
   import Section from "./section.svelte";
 
   let sequence = [];
 
-  for (let i = 0; i < brands.length; i += 3) {
+  for (let i = 0; i < logosAnimated.length; i += 3) {
     sequence.push(i);
   }
 
@@ -18,7 +18,7 @@
 
     logosWrappers.forEach(async (logoWrapper, i) => {
       const logos = Array.from(logoWrapper.children);
-      await sleep(2000 * i);
+      await sleep(1000 * i);
 
       setInterval(() => {
         let temp = logos[0];
@@ -62,12 +62,15 @@
   <div class="flex justify-center gap-huge mt-20">
     {#each sequence as i}
       <div class="logos-wrapper h-5 w-24 sm:h-8 sm:w-32">
-        <svelte:component this={brands[i].logo} class="hide to-top" />
-        {#if brands[i + 1] !== undefined}
-          <svelte:component this={brands[i + 1].logo} />
+        <svelte:component this={logosAnimated[i].logo} class="hide to-top" />
+        {#if logosAnimated[i + 1] !== undefined}
+          <svelte:component this={logosAnimated[i + 1].logo} />
         {/if}
-        {#if brands[i + 2] !== undefined}
-          <svelte:component this={brands[i + 2].logo} class="hide to-bottom" />
+        {#if logosAnimated[i + 2] !== undefined}
+          <svelte:component
+            this={logosAnimated[i + 2].logo}
+            class="hide to-bottom"
+          />
         {/if}
       </div>
     {/each}

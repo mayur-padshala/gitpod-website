@@ -21,6 +21,7 @@
   import Section from "$lib/components/section.svelte";
   import Resources from "$lib/components/resources.svelte";
   import AnimatedLogos from "$lib/components/animated-logos.svelte";
+  import UsedBy from "$lib/components/index/used-by.svelte";
 </script>
 
 <OpenGraph
@@ -50,6 +51,7 @@
   <Features {features} />
 </div>
 <SectionScreenshot />
+<UsedBy title="Used by 500k+ developers" class="py-small" />
 <Features features={otherFeatures} />
 <Section>
   <Resources {cards} headingLevel="h2" />
