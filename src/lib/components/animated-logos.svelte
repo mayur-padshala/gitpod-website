@@ -59,7 +59,7 @@
 
 <Section>
   <h2 class="h5 text-center">Unleashing developer teams at</h2>
-  <div class="flex justify-center gap-huge mt-20">
+  <div class="flex justify-center gap-20 mt-20">
     {#each sequence as i}
       <div class="logos-wrapper h-5 w-24 sm:h-8 sm:w-32">
         <svelte:component this={logosAnimated[i].logo} class="hide to-top" />
