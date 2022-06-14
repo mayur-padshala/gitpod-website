@@ -9,9 +9,20 @@
     }
   }
 
-  export const trackEvent = (event_name: string, props: any) => {
+  const allowsAnalytics = () => {
+    return !!Cookies.get("gp-analytical");
+  };
+
+  export const trackEvent = (
+    eventName: string,
+    props: any,
+    isStrictlyNecessary?: boolean
+  ) => {
+    if (!(allowsAnalytics() || isStrictlyNecessary)) {
+      return;
+    }
     window.analytics?.track(
-      event_name,
+      eventName,
       {
         ...props,
         authenticated: !!Cookies.get("gitpod-user"),
@@ -29,6 +40,9 @@
   };
 
   export const trackPage = (props: any) => {
+    if (!allowsAnalytics()) {
+      return;
+    }
     window.analytics?.page(
       {
         ...props,
@@ -43,7 +57,10 @@
     );
   };
 
-  export const trackIdentity = (traits: any) => {
+  export const trackIdentity = (traits: any, isStrictlyNecessary?: boolean) => {
+    if (!(allowsAnalytics() || isStrictlyNecessary)) {
+      return;
+    }
     window.analytics?.identify(traits, {
       context: {
         ip: "0.0.0.0",
