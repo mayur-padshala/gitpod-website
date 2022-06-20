@@ -1,6 +1,10 @@
 ---
 section: self-hosted/latest
 title: Gitpod Self-Hosted
+feature_availability:
+  - saas
+  - self-hosted v22.04
+feature_owner: "engineering-workspace"
 ---
 
 <script context="module">
@@ -8,6 +12,7 @@ title: Gitpod Self-Hosted
 </script>
 <script lang="ts">
   import OpenGraph from "$lib/components/open-graph.svelte";
+  import Availability from "$lib/components/docs/availability.svelte"
 </script>
 
 <OpenGraph
@@ -19,7 +24,7 @@ data={{
   }}
 />
 
-# Gitpod Self-Hosted
+# Gitpod Self-Hosted <Availability availablity={feature_availability}/>
 
 Gitpod can be deployed and operated on your own infrastructure. It supports different cloud providers, self-managed Kubernetes clusters, corporate firewalls, and even off-grid / air-gapped networks.
 

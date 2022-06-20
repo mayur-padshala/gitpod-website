@@ -12,6 +12,8 @@
   export let section;
   /** @type {string} */
   export let title;
+  /** @type {string} */
+  export let feature_owner;
 
   $: $docsCurrentSectionStore = section;
 </script>
