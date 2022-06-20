@@ -19,11 +19,11 @@
         label: `Self-Hosted from ${match}`,
       };
     } else {
-      //fail
+      console.error(
+        `Please provide a valid Versionnumber: ${JSON.stringify(item)}`
+      );
     }
   });
-
-  console.log(displayObject);
 </script>
 
 <span>

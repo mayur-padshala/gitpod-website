@@ -2,8 +2,6 @@
   import type { AvailabilityItem as AvailabilityItemType } from "../../types/docs.type";
 
   export let availabilityItem: AvailabilityItemType;
-
-  console.log(availabilityItem);
 </script>
 
 <span
