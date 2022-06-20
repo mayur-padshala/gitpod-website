@@ -11,7 +11,7 @@
 
 ## List of Sub-processors
 
-ℹ️ This page has been created in the context of the 🇪🇺 European General Data Protection Regulation (GDPR) and sub processor relationships in Gitpos's Data Processing Agreement (DPA).
+ℹ️ This page has been created in the context of the European 🇪🇺 General Data Protection Regulation (GDPR) and sub processor relationships in Gitpos's Data Processing Agreement (DPA).
 
 </div>
 
