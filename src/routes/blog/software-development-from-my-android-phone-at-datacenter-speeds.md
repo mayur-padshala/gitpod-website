@@ -30,7 +30,7 @@ A few years ago, I got into software development while exploring the [Android-x8
 
 # Getting started with Gitpod on Android
 
-![my android setup](/static/images/blog/software-development-from-my-android-phone-at-datacenter-speeds/20220412_004915681.jpg)
+![my android setup](../../..../../../static/images/blog/software-development-from-my-android-phone-at-datacenter-speeds/20220412_004915681.jpg)
 
 Getting started with Gitpod on Android is quite easy. If you are interested in setting up Gitpod on Android, you can check out the detailed guide: [draft](https://docs.google.com/document/d/18Y4fRCcO0pCGXrMbxNj-xqkcymn0laTvJep5Zhtc5UA/edit#)
 
@@ -59,11 +59,11 @@ As a kid, it inspired me! All my tiny little efforts weren't worthless afterall.
 
 Around that time Gitpod also launched the [Community Heroes program](https://www.gitpod.io/community/heroes) - an initiative that recognises the most active community members that go above and beyond to contribute to community 🍊🦸. I got recognised for my consistent efforts and was a member of the first cohort 😎
 
-[![community heros](/static/images/blog/software-development-from-my-android-phone-at-datacenter-speeds/community_heros_tweet.png)](https://twitter.com/gitpod/status/1466452229309837313?s=20&t=3RxZdUpS8QSMn601harwNQ)
+[![community heros](../../../static/images/blog/software-development-from-my-android-phone-at-datacenter-speeds/community_heros_tweet.png)](https://twitter.com/gitpod/status/1466452229309837313?s=20&t=3RxZdUpS8QSMn601harwNQ)
 
 Later, I had applied for an internship at Gitpod. It was kind of an unexpected event for me: I got the internship, and officially, I became a Gitpodder 🍊
 
-[![Mission passed: RESPECT 😝](/static/images/blog/software-development-from-my-android-phone-at-datacenter-speeds/internship_tweet.png)](https://twitter.com/axonasif/status/1478418230460907529?s=20&t=3RxZdUpS8QSMn601harwNQ)
+[![Mission passed: RESPECT 😝](../../../static/images/blog/software-development-from-my-android-phone-at-datacenter-speeds/internship_tweet.png)](https://twitter.com/axonasif/status/1478418230460907529?s=20&t=3RxZdUpS8QSMn601harwNQ)
 
 # Unlocking the power of Gitpod
 
